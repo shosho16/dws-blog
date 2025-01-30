@@ -1,0 +1,72 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 8px;
+  }
+}
+
+.card {
+  background-color: #f0f0f2;
+  width: 314px;
+  height: 418px;
+  border-radius: 16px;
+  align-self: center;
+  margin-top: 16px;
+}
+
+.card-image {
+  width: 314px;
+  height: 196px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+
+.card-image:hover {
+  cursor: pointer;
+}
+
+.card-date-author {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 130%;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.card-description {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.card-categories {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.card-body {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.category {
+  padding: 8px 12px 8px 12px;
+  width: 84px;
+  background-color: #e0e2e6;
+  border-radius: 42px;
+  font-size: 12px;
+  line-height: 130%;
+}
